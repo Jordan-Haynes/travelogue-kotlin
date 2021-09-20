@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">Travelogue</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="action_edit">Edit</string>
+    <string name="action_take_picture">Take Picture</string>
+    <string name="action_delete">Delete</string>
+    <string name="submit_call">Submit</string>
+    <string name="cancel_call">Cancel</string>
+    <string name="add_place_title">Add New Entry</string>
+    <string name="action_search">Search</string>
+
+    <string name="place_name_hint">Name</string>
+    <string name="place_location_hint">Location</string>
+    <string name="place_notes_hint">Notes</string>
+    <string name="place_picture_hint">Picture of Place</string>
+
+    <string name="placeholder_current">0, 0</string>
+    <string name="needs_location">No Current Location Saved with this Place</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps2">Map</string>
+
+    <string name="lat_long_text">%s, %s</string>
+    <string name="edit">Edit</string>
+    <string name="button_to_add_place">Button to add place</string>
+    <string name="button_to_edit_place">Button to edit place</string>
+    <string name="picture_preview">Picture preview</string>
+    <string name="background">Background</string>
+    <string name="main_picture_in_detail_view">Main picture in Detail View</string>
+    <string name="map_pin_icon">Map pin icon</string>
+    <string name="main_picture_in_place_list">Main picture in Place List</string>
+    <string name="add_new_place">Add New Place</string>
+    <string name="camera">Camera</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="added">Added</string>
+    <string name="photos">Photos</string>
+    <string name="map">Map</string>
+</resources>

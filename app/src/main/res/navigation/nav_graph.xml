@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/placeListFragment">
+    <fragment
+        android:id="@+id/placeListFragment"
+        android:name="com.akkeritech.android.travellogue.PlaceListFragment"
+        android:label="PlaceListFragment">
+        <action
+            android:id="@+id/action_placeListFragment_to_placeDetailViewFragment"
+            app:destination="@id/placeDetailViewFragment" />
+        <action
+            android:id="@+id/action_placeListFragment_to_addPlaceFragment"
+            app:destination="@id/addPlaceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/placeDetailViewFragment"
+        android:name="com.akkeritech.android.travellogue.PlaceDetailViewFragment"
+        android:label="fragment_place_detail_view">
+        <argument
+            android:name="placeId"
+            android:defaultValue="-1L"
+            app:argType="long" />
+        <action
+            android:id="@+id/action_placeDetailViewFragment_to_cameraFragment"
+            app:destination="@id/cameraFragment" />
+        <action
+            android:id="@+id/action_placeDetailViewFragment_to_photosFragment"
+            app:destination="@id/photosFragment" />
+        <action
+            android:id="@+id/action_placeDetailViewFragment_to_mapFragment"
+            app:destination="@id/mapFragment" />
+        <action
+            android:id="@+id/action_placeDetailViewFragment_to_placeListFragment"
+            app:destination="@id/placeListFragment" />
+        <action
+            android:id="@+id/action_placeDetailViewFragment_to_addPlaceFragment"
+            app:destination="@id/addPlaceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addPlaceFragment"
+        android:name="com.akkeritech.android.travellogue.AddPlaceFragment"
+        android:label="AddPlaceFragment" >
+        <action
+            android:id="@+id/action_addPlaceFragment_to_placeListFragment"
+            app:destination="@id/placeListFragment"
+            app:popUpTo="@id/placeListFragment" />
+        <action
+            android:id="@+id/action_addPlaceFragment_to_cameraFragment"
+            app:destination="@id/cameraFragment" />
+        <action
+            android:id="@+id/action_addPlaceFragment_to_placeDetailViewFragment"
+            app:destination="@id/placeDetailViewFragment"
+            app:popUpTo="@id/placeListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cameraFragment"
+        android:name="com.akkeritech.android.travellogue.CameraFragment"
+        android:label="CameraFragment" >
+        <action
+            android:id="@+id/action_cameraFragment_to_addPlaceFragment"
+            app:destination="@id/addPlaceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/photosFragment"
+        android:name="com.akkeritech.android.travellogue.PhotosFragment"
+        android:label="fragment_photos"
+        tools:layout="@layout/fragment_photos" />
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.akkeritech.android.travellogue.MapFragment"
+        android:label="MapFragment" />
+</navigation>
